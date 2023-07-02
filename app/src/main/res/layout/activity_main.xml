@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加联系人" />
+
+    <Button
+        android:id="@+id/btnReadContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取联系人" />
+
+    <Button
+        android:id="@+id/btnCallContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="呼叫联系人" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvNoContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="未找到联系人"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>
